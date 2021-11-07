@@ -6,7 +6,6 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0;
   outline: 0;
   box-sizing: border-box;
 }
@@ -23,6 +22,8 @@ body {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  margin-left: 100px;
+  background-color:rgb(207, 192, 192)
 }
 
 nav {
@@ -58,23 +59,6 @@ nav {
 .canvas-toggle {
   position: fixed;
   z-index: 1199;
-}
-
-input[type="text"] {
-  background: transparent;
-  position: absolute;
-  left: 20%;
-  top: 10px;
-  color: #bbb;
-  width: 70%;
-  line-height: 1.8;
-  font-size: 1.1rem;
-  padding: 0;
-}
-
-input[type="text"]:focus {
-  color: #fff;
-  outline: 0;
 }
 
 .sidebar:hover input[type="text"] {
@@ -168,25 +152,67 @@ nav:hover ~ .menu {
   width: 97%;
 }
 
-.page {
-  position: relative;
-  padding-left: 50px;
+
+/* form CSS */
+.btn
+{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all .5s ease-in-out;
+}
+.btn-block
+{
+    width: 100%;
+}
+.btn-primary
+{
+    cursor: pointer;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.btn-primary:hover
+{
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+.btn-success
+{
+    cursor: pointer;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+.btn-success:hover
+{
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
 }
 
-.page.color-1 {
-  background-color: #3498db;
-  color: #fff;
+input[type="text"] {
+  left: 20%;
+  top: 10px;
+  color:yellow;
+  width: 30%;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  padding: 0;
 }
 
-.page .content {
-  width: 100%;
-  max-width: 740px;
-  margin: 0 auto;
-  padding: 50px 20px;
-}
-
-.page .content h1,
-.page .content h2,
-.page .content p {
-  margin-bottom: 1em;
-}
