@@ -6,7 +6,6 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0;
   outline: 0;
   box-sizing: border-box;
 }
@@ -20,10 +19,20 @@ body {
   height: 100%;
 }
 
+header {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid black;
+  padding: 1em;
+  }
+
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-}
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    margin-left: 100px;
+    background-color:rgb(207, 192, 192)
+  }
 
 nav {
   position: relative;
@@ -58,18 +67,6 @@ nav {
 .canvas-toggle {
   position: fixed;
   z-index: 1199;
-}
-
-input[type="text"] {
-  background: transparent;
-  position: absolute;
-  left: 20%;
-  top: 10px;
-  color: #bbb;
-  width: 70%;
-  line-height: 1.8;
-  font-size: 1.1rem;
-  padding: 0;
 }
 
 input[type="text"]:focus {
@@ -168,25 +165,183 @@ nav:hover ~ .menu {
   width: 97%;
 }
 
-.page {
-  position: relative;
-  padding-left: 50px;
+.btn
+{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all .5s ease-in-out;
+}
+.btn-block
+{
+    width: 100%;
+}
+.btn-primary .bnt-sec
+{
+    cursor: pointer;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.btn-primary 
+.btn-sec:hover
+{
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
 }
 
-.page.color-1 {
-  background-color: #3498db;
-  color: #fff;
+input[type="text"] {
+  left: 20%;
+  top: 10px;
+  color:yellow;
+  width: 30%;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  padding: 0;
 }
 
-.page .content {
-  width: 100%;
-  max-width: 740px;
-  margin: 0 auto;
-  padding: 50px 20px;
+/* Progress bar */
+.progress-bg {
+	margin: 0 auto;
+	width: 65%;
+	height: 78px;
+	border-radius: 10px;
+  text-align: center;
+	-moz-box-shadow:    inset 0 0 10px #ccc;
+	-webkit-box-shadow: inset 0 0 10px #ccc;
+	box-shadow:         inset 0 0 10px #ccc;
+  margin-top: 50px;
 }
 
-.page .content h1,
-.page .content h2,
-.page .content p {
-  margin-bottom: 1em;
+.progress-bar {
+	height: 78px;
+	border-radius: 10px;
+	float: left;
+	width: 50%;
+	/* fallback */ 
+	background-color: #1c314a; 
+	
+	/* Safari 4-5, Chrome 1-9 */ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1c314a), to(#27425f)); 
+	
+	/* Safari 5.1, Chrome 10+ */ 
+	background: -webkit-linear-gradient(top, #1c314a, #27425f); 
+	
+	/* Firefox 3.6+ */ 
+	background: -moz-linear-gradient(top, #1c314a, #27425f); 
+	
+	/* IE 10 */ 
+	background: -ms-linear-gradient(top, #1c314a, #27425f); 
+	
+	/* Opera 11.10+ */ 
+	background: -o-linear-gradient(top, #1c314a, #27425f);	
+}
+
+.progress-bg h3.goal, .progress-bg h3.raised {
+	font-family: Arial,sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+	line-height: 78px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	display: inline;
+}
+
+
+.progress-bg h3.raised {
+	color: #fff;
+	margin: 14px 25px 0 50px;
+	padding: 0 25px 0 0;
+}
+
+.progress-bg h3.goal {
+	color: black;
+  text-align: center;
+}
+
+body .progress-bg h3.raised {
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+       -moz-animation: fadein 4s; /* Firefox */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera */
+            animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+.progress-bg h3.goal {
+	float: right;
+	display: inline;
+	padding: 0 25px 0 0;
+  text-align: center;
+}
+
+body .progress-bg div {
+	-webkit-animation: progress-bar 2s ease forwards;
+	-moz-animation: progress-bar 2s ease forwards;
+	-o-animation: progress-bar 2s ease forwards;
+	animation: progress-bar 2s ease forwards;
+}
+
+@-webkit-keyframes progress-bar {
+    from { width: 0%; }
+    to { width: 50%; }
+}
+
+@-moz-keyframes progress-bar {
+    from { width: 0%; }
+    to { width: 50%; }
+}
+
+@-o-keyframes progress-bar {
+    from { width: 0%; }
+    to { width: 50%; }
+}
+
+@keyframes progress-bar {
+    from { width: 0%; }
+    to { width: 50%; }
 }
