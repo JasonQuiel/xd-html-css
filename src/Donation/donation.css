@@ -208,8 +208,8 @@ nav:hover ~ .menu {
 input[type="text"] {
   left: 20%;
   top: 10px;
-  color:yellow;
-  width: 30%;
+  color:black;
+  width: 20%;
   line-height: 1.8;
   font-size: 1.1rem;
   padding: 0;
@@ -226,6 +226,8 @@ input[type="text"] {
 	-webkit-box-shadow: inset 0 0 10px #ccc;
 	box-shadow:         inset 0 0 10px #ccc;
   margin-top: 50px;
+  border-color: black;
+  border: 1px solid;
 }
 
 .progress-bar {

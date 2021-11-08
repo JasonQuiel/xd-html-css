@@ -155,7 +155,7 @@ nav:hover ~ .menu {
 
 .menu {
   position: relative;
-  left: 3%;
+  left:3%;
   width: 97%;
 }
 
@@ -204,7 +204,7 @@ nav:hover ~ .menu {
 input[type="text"] {
   left: 20%;
   top: 10px;
-  color:yellow;
+  color: black;
   width: 30%;
   line-height: 1.8;
   font-size: 1.1rem;
