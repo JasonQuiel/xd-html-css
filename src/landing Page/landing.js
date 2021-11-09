@@ -19,7 +19,6 @@ $(window).resize(function() {
 
 });
 
-
 // Slide
 $(document).ready(function(){
   $('.customer-logos').slick({

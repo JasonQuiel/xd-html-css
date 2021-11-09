@@ -19,6 +19,10 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 
+
+
+
+
 // Side Navigation Function
 $('.canvas-toggle').hide();
 

@@ -2,6 +2,13 @@
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
 /* entypo   */
+header {
+text-align: center;
+margin-top: 50px;
+margin-bottom: 30px;
+border-bottom: 2px solid black;
+padding: 1em;
+}
 
 * {
   margin: 0;
@@ -10,13 +17,6 @@
   box-sizing: border-box;
 }
 
-header {
-text-align: center;
-margin-top: 50px;
-margin-bottom: 30px;
-border-bottom: 2px solid black;
-padding: 1em;
-}
 
 [class*="en-"]:before {
   font-family: 'entypo', sans-serif;
@@ -29,7 +29,7 @@ body {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  margin-left: 100px;
+  margin-left: 50px;
   background-color:rgb(207, 192, 192)
 }
 
@@ -209,6 +209,22 @@ input[type="text"] {
   line-height: 1.8;
   font-size: 1.1rem;
   padding: 0;
+}
+
+.login {
+margin-left: 50px;
+}
+
+.gap {
+  border-top: 1px solid black
+}
+
+h2 {
+  margin-left: 50px;
+}
+
+.registration {
+  margin-left: 50px;
 }
 
  /* Footer CSS */
