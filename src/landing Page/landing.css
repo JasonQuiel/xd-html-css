@@ -23,6 +23,7 @@ body {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  
 }
 
 nav {
@@ -105,7 +106,7 @@ input[type="text"]:focus {
 }
 
 .sidebar .main-nav ul li.logo i:before {
-  color: yellow;
+  color: #604fcd;
   font-size: 1.6em;
 }
 
@@ -138,15 +139,15 @@ input[type="text"]:focus {
 
 .sidebar .main-nav ul li:hover {
   background-color: #111;
-  border-left: 3px solid yellow;
+  border-left: 3px solid #604fcd;
 }
 
 .sidebar .main-nav li a:focus {
-  border-left: 3px solid yellow;
+  border-left: 3px solid #604fcd;
 }
 
 .sidebar .main-nav ul li:hover i:before {
-  color: yellow;
+  color: #604fcd;
 }
 
 .sidebar:hover + .menu {
@@ -171,10 +172,11 @@ nav:hover ~ .menu {
 .page {
   position: relative;
   padding-left: 50px;
+  background-color:#d9dff5;
 }
 
 .page.color-1 {
-  background-color: #3498db;
+  background-color: #9b00ff;
   color: #fff;
 }
 
@@ -197,6 +199,7 @@ nav:hover ~ .menu {
   text-align: center;
   width: 150px;
   padding: 1em;
+  margin: 10px;
 }
  
 .network {
@@ -205,6 +208,7 @@ nav:hover ~ .menu {
   text-align: center;
   width: 150px;
   padding: 1em;
+  margin: 10px;
 }
 
  .security {
@@ -213,6 +217,7 @@ nav:hover ~ .menu {
   text-align: center;
   width: 150px;
   padding: 1em;
+  margin: 10px;
  }
 
  .os {
@@ -221,10 +226,12 @@ nav:hover ~ .menu {
   text-align: center;
   width: 150px;
   padding: 1em;
+  margin: 10px;
  } 
    
  .caption {
  display: center;
+ font-size: 1.5em;
 }
 
 /* Slider */

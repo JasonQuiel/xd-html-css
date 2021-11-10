@@ -168,25 +168,3 @@ nav:hover ~ .menu {
   width: 97%;
 }
 
-.page {
-  position: relative;
-  padding-left: 50px;
-}
-
-.page.color-1 {
-  background-color: #3498db;
-  color: #fff;
-}
-
-.page .content {
-  width: 100%;
-  max-width: 740px;
-  margin: 0 auto;
-  padding: 50px 20px;
-}
-
-.page .content h1,
-.page .content h2,
-.page .content p {
-  margin-bottom: 1em;
-}
