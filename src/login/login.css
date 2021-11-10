@@ -4,9 +4,9 @@
 /* entypo   */
 header {
 text-align: center;
-margin-top: 50px;
+margin-top: 10px;
 margin-bottom: 30px;
-border-bottom: 2px solid black;
+border-bottom: 2px solid #9b00ff;
 padding: 1em;
 }
 
@@ -30,7 +30,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   margin-left: 50px;
-  background-color:rgb(207, 192, 192)
+  background-color: #d9dff5
 }
 
 nav {
@@ -96,7 +96,7 @@ nav {
 }
 
 .sidebar .main-nav ul li.logo i:before {
-  color: yellow;
+  color: #604fcd;
   font-size: 1.6em;
 }
 
@@ -129,15 +129,15 @@ nav {
 
 .sidebar .main-nav ul li:hover {
   background-color: #111;
-  border-left: 3px solid yellow;
+  border-left: 3px solid #604fcd;
 }
 
 .sidebar .main-nav li a:focus {
-  border-left: 3px solid yellow;
+  border-left: 3px solid #604fcd;
 }
 
 .sidebar .main-nav ul li:hover i:before {
-  color: yellow;
+  color: #604fcd;
 }
 
 .sidebar:hover + .menu {
@@ -161,45 +161,36 @@ nav:hover ~ .menu {
 
 
 /* form CSS */
-.btn
-{
-    display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    transition: all .5s ease-in-out;
-}
-.btn-block
-{
-    width: 100%;
-}
-.btn-primary .bnt-sec
+
+.btn-login
 {
     cursor: pointer;
-    color: #fff;
-    background-color: #337ab7;
-    border-color: #2e6da4;
+    color: #fcfbff;
+    background-color: #604fcd;
+    border-color: #130b43;
+    width: 10%;
+    font-size: 20px;
 }
-.btn-primary 
-.btn-sec:hover
-{
-    color: #fff;
-    background-color: #286090;
-    border-color: #204d74;
+
+.btn-login:hover {
+  background-color: #412eb9;
+  box-shadow: 0 6px 10px 0  #000;
 }
+
+.btn-reg {
+  cursor: pointer;
+  color: #fcfbff;
+  background-color: #604fcd;
+  border-color: #130b43;
+  width: 10%;
+  font-size: 20px;
+}
+
+.btn-reg:hover {
+  background-color: #412eb9;
+  box-shadow: 0 6px 10px 0  #000;
+}
+
 
 input[type="text"] {
   left: 20%;
@@ -209,22 +200,60 @@ input[type="text"] {
   line-height: 1.8;
   font-size: 1.1rem;
   padding: 0;
+  border: 3px solid #9b00ff
+
+}
+#pword {
+  left: 20%;
+  top: 10px;
+  color: black;
+  width: 30%;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  padding: 0;
+  border: 3px solid #9b00ff
+
 }
 
+#cpword {
+  left: 20%;
+  top: 10px;
+  color: black;
+  width: 30%;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  padding: 0;
+  border: 3px solid #9b00ff
+
+}
 .login {
+margin-top: 10px;
 margin-left: 50px;
-}
 
+}
 .gap {
-  border-top: 1px solid black
+  border-top: 2px solid #9b00ff;
 }
-
 h2 {
   margin-left: 50px;
 }
 
 .registration {
-  margin-left: 50px;
+margin-top: 10px;
+ margin-left: 50px;
+}
+
+.join {
+ float: right;
+ margin-right: 50%;
+ margin-top: 10px;
+ position: static;
+}
+
+.login-img {
+float: right;
+ margin-right: 50%;
+ position: static;
 }
 
  /* Footer CSS */
@@ -256,7 +285,7 @@ h2 {
 }
 .site-footer a
 {
-  color:#737373;
+  color: #fff;
 }
 .site-footer a:hover
 {
