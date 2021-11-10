@@ -8,6 +8,7 @@ margin-top: 10px;
 margin-bottom: 30px;
 border-bottom: 2px solid #9b00ff;
 padding: 1em;
+;
 }
 
 * {
@@ -246,7 +247,7 @@ margin-top: 10px;
 .join {
  float: right;
  margin-right: 50%;
- margin-top: 10px;
+ margin-top: 5%;
  position: static;
 }
 
