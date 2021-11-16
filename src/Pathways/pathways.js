@@ -16,6 +16,33 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
+let dbRef = firebase.database().ref('prices') //references prices collection
+ref.on('value', getPrice)
+
+function getPrice(dbRef) {
+let price = dbRef.val()
+let keys = object.keys(price)
+for (let i = 0; i < keys.length; i++) {
+  let k = keys[i]
+  let price = price[k].price
+
+let li = createElement('li', price)
+li.parent('priceList')
+}
+}
+
+/*
+dbRef.on("value", function(snapshot) {
+  snapshot.forEach(function(e) {
+    document.querySelector('priceList').innerHTML +=
+  let $p = document.createElement('p')
+  $p.innerHTML = snapshot.key + " - " + snap.val()
+  }
+*/
+
+
+
+
 // Side Navigation Function
 $('.canvas-toggle').hide();
 
