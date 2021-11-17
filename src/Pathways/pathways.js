@@ -19,6 +19,8 @@ const app = initializeApp(firebaseConfig);
 let dbRef = firebase.database().ref('prices') //references prices collection
 ref.on('value', getPrice)
 
+
+/*
 function getPrice(dbRef) {
 let price = dbRef.val()
 let keys = object.keys(price)
@@ -30,8 +32,9 @@ let li = createElement('li', price)
 li.parent('priceList')
 }
 }
+*/
 
-/*
+/* nope...
 dbRef.on("value", function(snapshot) {
   snapshot.forEach(function(e) {
     document.querySelector('priceList').innerHTML +=
